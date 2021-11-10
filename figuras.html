@@ -7,8 +7,54 @@
     <title>Figuras Geometricas</title>
 </head>
 <body>
-    <h1>Figuras Geometricas</h1>
+    <header>
+        <h1>Figuras Geometricas</h1>
+    </header>
+    <section class ="Cuadrado">
+        <form>
+            <fieldset>
+                <legend>Cuadrado</legend>
+                <label for="inputCuadrado">
+                    Escribe cuanto mide el lado de tu cuadrado
+                </label>
+                <input id="inputCuadrado" type = "number">
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular perimetro
+                </button>
+                <button type="button" onclick = "calcularAreaCuadrado()">
+                    Calcular Area
+                </button>
+            </fieldset>
+
+        </form>
+    </section>
+    <section class = "triangulo">
+        <form>
+            <fieldset>
+                <legend>triangulo</legend>
+                <label for="inputLadoTriangulo1">
+                    Escribe cuanto mide el primer lado de tu triangulo
+                </label>
+                <input id="inputLadoTriangulo1" type = "number">
+                <label for="inputLadoTriangulo2">
+                    Escribe cuanto mide el segundo lado de tu triangulo
+                </label>
+                <input id="inputLadoTriangulo2" type = "number">
+                <label for="inputbaseTriangulo">
+                    Escribe cuanto mide la base de tu triangulo
+                </label>
+                <input id="inputbaseTriangulo" type = "number">
+                <button type="button" onclick ="calcularPerimetroTriangulo()">
+                    Calcular perimetro
+                </button>
+                <button type="button" onclick = "calcularAreaTriangulo()">
+                    Calcular Area Triangulo 
+                </button>    
+            </fieldset>
+        </form>
+    </section>
+
+
     <script src="figuras.js"></script>
-    
 </body>
 </html>
