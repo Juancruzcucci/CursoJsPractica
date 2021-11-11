@@ -61,17 +61,42 @@ function calcularAreaCuadrado(){
     alert(area);
 };
 //Triangulo
+
+
+
 function calcularPerimetroTriangulo(){
+//lado1
+const ladotriangulo1 = document.getElementById("inputLadoTriangulo1");
+const valorLado1 = parseInt(ladotriangulo1.value); 
+//lado2
+const ladotriangulo2 = document.getElementById("inputLadoTriangulo2");
+const valorLado2 = parseInt(ladotriangulo2.value); 
+//lado3
+const baseTriangulo = document.getElementById("inputBaseTriangulo");
+const valorBase = parseInt(baseTriangulo.value);
+//Perimetro
+const perimetroTriangulo = valorLado1 + valorLado2 + valorBase;
+alert(perimetroTriangulo);
+};
+
+
+function calcularAreaTriangulo(){
+    //lado1
     const ladotriangulo1 = document.getElementById("inputLadoTriangulo1");
+    const valorLado1 = parseInt(ladotriangulo1.value); 
+    //lado2
     const ladotriangulo2 = document.getElementById("inputLadoTriangulo2");
-    const basetriangulo = document.getElementById("inputbaseTriangulo");
-    const valorlado1 = ladotriangulo1.value;
-    const valorlado2 = ladotriangulo2;
-    const valorbase = basetriangulo
-    const perimetroTriangulo = valorlado2 * 3
-    alert(perimetroTriangulo);
+    const valorLado2 = parseInt(ladotriangulo2.value); 
+    //lado3
+    const baseTriangulo = document.getElementById("inputBaseTriangulo");
+    const valorBase = parseInt(baseTriangulo.value);
+    //Altura
+    const alturaTriangulo = document.getElementById("inputAlturaTriangulo");
+    const valorAltura = parseInt(alturaTriangulo.value);
+    //Perimetro
+    const areaTriangulo = (valorBase * valorAltura) / 2;
+    alert(areaTriangulo);
+    };
+
     
-}
-
-
 
