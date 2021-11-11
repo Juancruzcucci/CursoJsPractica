@@ -98,5 +98,25 @@ function calcularAreaTriangulo(){
     alert(areaTriangulo);
     };
 
+
+//Circulo
+function calcularPerimetroCirculo(){
+    const radioCirculo = document.getElementById("inputRadio");
+    const valorRadio = parseInt(radioCirculo.value);
+    const perimetroCirculo = (valorRadio * 2) * Math.PI;
+    alert(perimetroCirculo);
+}
+
+
+function calcularAreaCirculo(){
+    const radioCirculo = document.getElementById("inputRadio");
+    const valorRadio = parseInt(radioCirculo.value);
+    const AreaCirculo = (valorRadio * valorRadio) * Math.PI;
+    alert(AreaCirculo);
+}
+
+
+
+
     
 
