@@ -41,82 +41,95 @@
 //
 //} else {
 //    alert("Datos erroneos. Recarga la pagina. SOLO PODES USAR 1, 2 O 3!!");
+////};
+//
+//
+//
+////Conectado con HTML
+////Cuadrado
+//function calcularPerimetroCuadrado(){
+//    const input = document.getElementById("inputCuadrado");
+//    const value = input.value;
+//    const perimetro = value * 4;
+//    alert(perimetro);
 //};
+//
+//function calcularAreaCuadrado(){
+//    const input = document.getElementById("inputCuadrado");
+//    const value = input.value;
+//    const area = value * value;
+//    alert(area);
+//};
+////Triangulo
+//
+//
+//
+//function calcularPerimetroTriangulo(){
+////lado1
+//const ladotriangulo1 = document.getElementById("inputLadoTriangulo1");
+//const valorLado1 = parseInt(ladotriangulo1.value); 
+////lado2
+//const ladotriangulo2 = document.getElementById("inputLadoTriangulo2");
+//const valorLado2 = parseInt(ladotriangulo2.value); 
+////lado3
+//const baseTriangulo = document.getElementById("inputBaseTriangulo");
+//const valorBase = parseInt(baseTriangulo.value);
+////Perimetro
+//const perimetroTriangulo = valorLado1 + valorLado2 + valorBase;
+//alert(perimetroTriangulo);
+//};
+//
+//
+//function calcularAreaTriangulo(){
+//    //lado1
+//    const ladotriangulo1 = document.getElementById("inputLadoTriangulo1");
+//    const valorLado1 = parseInt(ladotriangulo1.value); 
+//    //lado2
+//    const ladotriangulo2 = document.getElementById("inputLadoTriangulo2");
+//    const valorLado2 = parseInt(ladotriangulo2.value); 
+//    //lado3
+//    const baseTriangulo = document.getElementById("inputBaseTriangulo");
+//    const valorBase = parseInt(baseTriangulo.value);
+//    //Altura
+//    const alturaTriangulo = document.getElementById("inputAlturaTriangulo");
+//    const valorAltura = parseInt(alturaTriangulo.value);
+//    //Perimetro
+//    const areaTriangulo = (valorBase * valorAltura) / 2;
+//    alert(areaTriangulo);
+//    };
+//
+//
+////Circulo
+////function calcularPerimetroCirculo(){
+////const radioCirculo = document.getElementById("inputRadio");
+////    const valorRadio = parseInt(radioCirculo.value);
+////    const perimetroCirculo = (valorRadio * 2) * Math.PI;
+//    alert(perimetroCirculo);
+//}
+//
+//
+//function calcularAreaCirculo(){
+//    const radioCirculo = document.getElementById("inputRadio");
+//    const valorRadio = parseInt(radioCirculo.value);
+//    const AreaCirculo = (valorRadio * valorRadio) * Math.PI;
+//    alert(AreaCirculo);
+//}
+//
 
 
+//En este ejercicio debes crear una función para calcular la altura de un triángulo isósceles.
+//La función debe recibir, como parámetros, la longitud de los 3 lados del triángulo.
+//La función debe validar que la longitud de los 3 lados del triángulo corresponden a un triángulo isósceles.
+// La función debe retornar la altura del triángulo
 
-//Conectado con HTML
-//Cuadrado
-function calcularPerimetroCuadrado(){
-    const input = document.getElementById("inputCuadrado");
-    const value = input.value;
-    const perimetro = value * 4;
-    alert(perimetro);
+function trianguloIsosceles(lado1, lado2, base){
+     if(lado1 === lado2 && lado1 !== base){
+        const altura = Math.sqrt(((lado1 ** 2) - ((base ** 2) /4 )))
+        return altura;
+    }else{
+        console.log("Debes ingresar un isosceles");
+    }; 
 };
+trianguloIsosceles(10, 5);
 
-function calcularAreaCuadrado(){
-    const input = document.getElementById("inputCuadrado");
-    const value = input.value;
-    const area = value * value;
-    alert(area);
-};
-//Triangulo
-
-
-
-function calcularPerimetroTriangulo(){
-//lado1
-const ladotriangulo1 = document.getElementById("inputLadoTriangulo1");
-const valorLado1 = parseInt(ladotriangulo1.value); 
-//lado2
-const ladotriangulo2 = document.getElementById("inputLadoTriangulo2");
-const valorLado2 = parseInt(ladotriangulo2.value); 
-//lado3
-const baseTriangulo = document.getElementById("inputBaseTriangulo");
-const valorBase = parseInt(baseTriangulo.value);
-//Perimetro
-const perimetroTriangulo = valorLado1 + valorLado2 + valorBase;
-alert(perimetroTriangulo);
-};
-
-
-function calcularAreaTriangulo(){
-    //lado1
-    const ladotriangulo1 = document.getElementById("inputLadoTriangulo1");
-    const valorLado1 = parseInt(ladotriangulo1.value); 
-    //lado2
-    const ladotriangulo2 = document.getElementById("inputLadoTriangulo2");
-    const valorLado2 = parseInt(ladotriangulo2.value); 
-    //lado3
-    const baseTriangulo = document.getElementById("inputBaseTriangulo");
-    const valorBase = parseInt(baseTriangulo.value);
-    //Altura
-    const alturaTriangulo = document.getElementById("inputAlturaTriangulo");
-    const valorAltura = parseInt(alturaTriangulo.value);
-    //Perimetro
-    const areaTriangulo = (valorBase * valorAltura) / 2;
-    alert(areaTriangulo);
-    };
-
-
-//Circulo
-function calcularPerimetroCirculo(){
-    const radioCirculo = document.getElementById("inputRadio");
-    const valorRadio = parseInt(radioCirculo.value);
-    const perimetroCirculo = (valorRadio * 2) * Math.PI;
-    alert(perimetroCirculo);
-}
-
-
-function calcularAreaCirculo(){
-    const radioCirculo = document.getElementById("inputRadio");
-    const valorRadio = parseInt(radioCirculo.value);
-    const AreaCirculo = (valorRadio * valorRadio) * Math.PI;
-    alert(AreaCirculo);
-}
-
-
-
-
-    
 
