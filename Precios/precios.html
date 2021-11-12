@@ -17,8 +17,11 @@
                 <legend>Haz tus descuentos</legend>
                 <label for="inputprecio">Precio original</label>
                 <input type="number" id="inputprecio">
-                <label for="inputdescuento">Porcentaje descuento</label>
-                <input type="number" id="inputdescuento">
+                <select id = "descuentoElegido">
+                    <option id = "desc10">Cupon 10% descuento</option>
+                    <option id = "desc25">Cupon 25% descuento</option>
+                    <option id = "desc40">Cupon 40% descuento</option>
+                </select>>
                 <button type="button" onclick = "calcularPrecioConDescuento()" >Calcular</button>
                 <p id="resultado"></p>
             </fieldset>
